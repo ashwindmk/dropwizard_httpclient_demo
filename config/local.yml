@@ -1,0 +1,25 @@
+logging:
+  # log-levels: OFF < FATAL < ERROR < WARN < INFO < DEBUG < TRACE < ALL
+  loggers:
+    org.apache.http: DEBUG
+
+# All timeouts are in seconds
+httpClient:
+  connectionRequestTimeout: 40
+  connectionTimeout: 20
+  timeout: 10
+  cookiesEnabled: false
+  maxConnections: 10
+  maxConnectionsPerRoute: 5
+  keepAlive: 30
+  timeToLive: 300
+  validateAfterInactivityPeriod: 5
+  # Below properties are not used for now
+  retries: 3
+  minThreads: 32
+  maxThreads: 128
+  workQueueSize: 512
+  userAgent: http-client-demo (Apache Default HttpClient)
+  gzipEnabled: true
+  gzipEnabledForRequests: false
+  chunkedEncodingEnabled: false
